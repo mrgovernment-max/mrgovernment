@@ -209,6 +209,10 @@ nav ul{
 
  @media screen and (max-width:600px){
     #cons{margin-top: 70%;}}
+  @media screen and (max-width:600px){
+        #cons{margin-left: 5%;}}
+        @media screen and (max-width:600px){
+            #cons{margin-right: 10%;}}
     @media screen and (max-width:600px){
         #cons{width:80%;}}
         @media screen and (max-width:600px){
