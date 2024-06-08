@@ -1,0 +1,316 @@
+
+#whole{
+        background-image: url(hero-image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 0;
+        margin: 0px 0px ;
+}
+
+nav{
+    width: 100%;
+    margin-top: -0.9%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family:  "Montserrat",sans-serif;
+}
+
+nav a:hover{
+    border-bottom: 2px solid white;
+    padding: 3px;
+     color:#404040;
+ }
+
+
+nav ul li{
+    border: 1px solid;
+    display: inline;
+    font-size: small;
+    padding: 5px 0.5%;
+    margin-left:0 ;
+    margin-right:0.01%;
+    margin-top: 0;
+    border-style: groove;
+    background-color:rgb(61, 57, 52);
+}
+
+nav ul{
+    text-align: right;
+}
+@media screen and (max-width:800px){
+    nav ul li{text-align: center;}}
+
+
+#nova{
+    margin-left: -30px;
+    text-align: start;
+    font-size: x-large;
+    color: white;
+    font-family:  "Montserrat",sans-serif;
+
+}
+
+#write{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    padding-bottom: 40vh;
+    color: white;
+    margin-left:3%;
+    margin-top: 20%;
+    font-family:  "Montserrat",sans-serif;
+    position: relative;
+
+}
+
+    @media screen and (max-width:1100px){
+        #write{margin-top: 80%;}}
+        @media screen and (max-width:1100px){
+            #write{padding-bottom: 40vh;}}
+           
+            
+        
+    
+
+
+#tat{
+   font-size: small;
+    width: 15%;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+
+}
+#tat a{
+    text-decoration: none;
+    color: black;
+    font-family:  "Montserrat",sans-serif;
+    
+}
+
+
+@media screen and (max-width:800px){
+   #tat{width: 35%;}
+}
+
+#tot{
+    font-size: 300%;
+    width: 100%;
+}
+@media screen and (max-width:800px){
+    #tot{font-size: 250%;}}
+
+#tet{
+    width: 100%;
+    line-height: 20px;
+    word-spacing: 2px;
+}
+
+
+
+#imgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    row-gap: 5%;
+    column-gap: 3%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+@media screen and (max-width:1100px){
+    #imgs{grid-template-columns: 1fr ;}
+ }
+ 
+#wtt{
+    color: white;
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+#wtt p{
+    font-size: 10vh;
+}
+@media screen and (max-width:800px){
+    #wtt p{font-size: 6.5vh;}}
+
+#wttt{
+    margin-left: 50%;
+    margin-top: -30%;
+    color: white;
+    word-spacing: 1px;
+    line-height: 22px; 
+    
+}
+
+@media screen and (max-width:800px){
+    #wttt{ margin-top: 15%;
+    margin-left: 5%;}
+ }
+ @media screen and (max-width:800px){
+    #wttt p{font-size: x-large;}}
+
+    @media screen and (max-width:800px){
+        #wttt p{line-height: 30px;}}
+
+ #con{
+    line-height: 25px;
+    width: 100%;
+    margin: auto;
+    margin-top: 12%;
+    color: white;
+    font-family:  "Montserrat",sans-serif;
+    background-color: rgb(32, 32, 43);
+    padding: 20px 5%;
+    border-radius: 15px;
+    position: relative;
+ }
+
+ @media screen and (max-width:800px){
+    #con{margin-bottom: 60%;}}
+    @media screen and (max-width:800px){
+        #con{padding: 7%;}}
+
+
+
+ #con button{
+    padding: 7px 5%;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+
+ }
+
+ #con button a{
+    color: black;
+    text-decoration: none;
+    font-family:  "Montserrat",sans-serif;
+    font-size: larger;
+ }
+
+
+
+ #cons{
+    background-color: transparent;
+    margin: auto;
+    margin-top: 15%;
+    width: 50%;    
+    
+ }
+
+ @media screen and (max-width:600px){
+    #cons{margin-top: 70%;}}
+    @media screen and (max-width:600px){
+        #cons{width:80%;}}
+        @media screen and (max-width:600px){
+            #cons input{padding: 1%;}}
+
+ #icons{
+    float: right;
+    font-size: xx-large;
+    color: aliceblue;
+    margin-top: 10px;
+   
+ }
+ @media screen and (max-width:800px){
+    #icons{margin-bottom: 90%;}}
+    @media screen and (max-width:800px){
+        #icons{margin-top: -55%;}}
+
+ #icons a{
+
+    color: aliceblue;
+
+ }
+
+ #all{
+    float: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 5%;
+    margin-right: 5%;
+    column-gap: 5%;
+    row-gap: 5%;
+    width: 50%;
+    margin-top: 10%;
+    border-bottom: 2px solid white;
+    
+
+ }
+
+ @media screen and (max-width:1100px){
+    #all{margin-top: 25%;}}
+    @media screen and (max-width:1100px){
+        #all{float: left;}}
+        @media screen and (max-width:1100px){
+            #all{width: 100%;}}
+            @media screen and (max-width:1100px){
+                #all{padding-bottom: 10%;}}
+
+ #mee{
+    font-size: 300%;
+    margin-top: 10%;
+    position: absolute;
+    color: white;
+    background-color: transparent;
+    width: 25%;
+    height: 10%;
+ }
+ @media screen and (max-width:1100px){
+    #mee{width: 100%;}}
+
+
+
+  #me{
+    background-color: transparent;
+    color: white;
+    margin-left: 35%;
+    margin-right: 5%;
+    margin-top: 5%;
+    padding: 2%;
+    font-family:  "Montserrat",sans-serif;
+    
+  } 
+  @media screen and (max-width:1100px){
+    #me{margin-left: 2px;}}
+    @media screen and (max-width:1100px){
+        #me{margin-top: 40%;}}
+
+  
+  #ma{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5%;
+    column-gap: 5%;
+    padding-bottom: 10%;
+    border-bottom: 3px solid white;
+    
+  }
+  #bac{
+    float: right;
+    background-color: white;
+    margin-top: 5%;
+    padding: 10px 4%;
+    text-decoration: none;
+    color: black;
+    font-family:  "Montserrat",sans-serif;
+    border-radius: 30px;
+
+  }
+
+  #ma,#maa,#mo,#moo,#mat{
+    width: 100%;
+    color: white;
+    font-family:  "Montserrat",sans-serif;
+  }
+
+
