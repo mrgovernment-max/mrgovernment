@@ -200,6 +200,23 @@ div h2 p{
     font-family: "Montserrat",sans-serif;
 }
 
+#text a{
+    border: 1px solid white;
+    padding: 2%;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    font-family:  "Montserrat",sans-serif;
+}
+
+#text a:hover{
+    background-color: black;
+    color: white;
+}
+
+
 
 @media screen and (max-width:600px){
     #double{display: block;}
