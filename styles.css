@@ -151,6 +151,23 @@ nav ul{
     
 }
 
+
+#wttt a{
+    border: 1px solid white;
+    padding: 2%;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    font-family:  "Montserrat",sans-serif;
+}
+
+#wttt a:hover{
+    background-color: black;
+    color: white;
+}
+
 @media screen and (max-width:800px){
     #wttt{ margin-top: 15%;
     margin-left: 5%;}
