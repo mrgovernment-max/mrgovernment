@@ -38,15 +38,38 @@
 </nav>
 <div id="cons">
 <section id="con">
+    <form action="" id="loginform">
    <h2>TELL ME YOUR DIGITAL STORIES</h2> 
    <label for="first">FIRST NAME</label><br>
-   <input type="text" id="first" name="first" style="width: 100%;"><br>
-   <label for="last">LAST NAME</label><br>
-   <input type="text" id="last" name="last" style="width: 100%;"><br>
+   <input type="text" id="first" class="form-control" name="first" style="width: 100%;"><br>
    <label for="mail">EMAIL</label><br>
-   <input type="text" id="mail" name="mail" style="width: 100%;">
-   <button  ><b><a href="" >SUBMIT</a></b></button>
+   <input type="text" id="mail" class="form-control" name="mail" style="width: 100%;">
+   <button type="submit" ><b><a href="" >SUBMIT</a></b></button>
 </section>
+<script>
+let loginForm = document.getElementById("loginForm");
+
+loginForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let first = document.getElementById("first");
+  let mail = document.getElementById("mail");
+
+  if (first.value == "" || mail.value == ""   ) {
+    alert("Ensure you input a value in both fields!");
+  } else {
+    // perform operation with form input
+    alert("This form has been successfully submitted!");
+    console.log(
+      `This form has a firstname of ${first.value} and mail of ${mail.value}`
+    );
+
+    first.value = "";
+    mail.value = "";
+  }
+});
+
+</script>
  
 <div id="icons">
 
