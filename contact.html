@@ -38,38 +38,16 @@
 </nav>
 <div id="cons">
 <section id="con">
-    <form action="" id="loginform">
-   <h2>TELL ME YOUR DIGITAL STORIES</h2> 
+      <form action="https://api.web3forms.com/submit" method="POST">
+   <h2>TELL ME YOUR DIGITAL STORIES</h2>
+   <input type="hidden" name="access_key" value="fd3982c6-dc25-4253-a4af-5cd13c644d11"> 
    <label for="first">FIRST NAME</label><br>
    <input type="text" id="first" class="form-control" name="first" style="width: 100%;"><br>
    <label for="mail">EMAIL</label><br>
    <input type="text" id="mail" class="form-control" name="mail" style="width: 100%;">
    <button type="submit" ><b><a href="" >SUBMIT</a></b></button>
 </section>
-<script>
-let loginForm = document.getElementById("loginForm");
 
-loginForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  let first = document.getElementById("first");
-  let mail = document.getElementById("mail");
-
-  if (first.value == "" || mail.value == ""   ) {
-    alert("Ensure you input a value in both fields!");
-  } else {
-    // perform operation with form input
-    alert("This form has been successfully submitted!");
-    console.log(
-      `This form has a firstname of ${first.value} and mail of ${mail.value}`
-    );
-
-    first.value = "";
-    mail.value = "";
-  }
-});
-
-</script>
  
 <div id="icons">
 
