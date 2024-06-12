@@ -1,59 +1,18 @@
 body{
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: scroll;
+    background-color: #97919fe2;
 }
 
-nav{
-    width: 100%;
-    padding-top: 5%;
-}
 
-nav ul{
-    text-align: left;
-}
-
-nav ul h1{
-    text-align: end;
-}
-
-nav ul li{
-    display: inline;
-    margin-right:60px ;
-    border: 2px solid white ;
-    padding: 10px 5%;
-    border-radius: 50px;
-    font-size: larger;
-   
-}
-
-nav ul li:hover{
-    color: black;
-    background-color: #fff;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    
-
-}
-
-@media screen and (max-width:500px){
-    nav ul li{margin-right: 10px;
-        padding: 5px 4%;
-        font-size: large;
-        display: block;
-        text-align: center;
-        
-    
-    }}
 
   
 
 .content{
     margin: auto;
+    margin-top: 16%;
     text-align: center;
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     
     
@@ -66,15 +25,25 @@ nav ul li a{
 
 }
 .content h1{
-    font-size: 100px;
+    font-size: 150px;
     color: #fff;
+    background-color:transparent;
+    padding: 0%;
+    width: max-content;
+    margin: auto;
+    margin-top: 12%;
    
+}
+
+.content h1:hover{
+    -webkit-text-stroke: 3px #fff;
+    color: transparent;;
 }
 
 
 
 @media screen and (max-width:800px){
-    .content h1{font-size: 7vh;
+    .content h1{font-size: 8vh;
         padding-top: 50%;
     }}
 
@@ -88,7 +57,7 @@ nav ul li a{
     padding: 14px 70px;
     border-radius: 50px;
     margin-top: 20px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.247);
 }
 
 .content a:hover{
@@ -116,3 +85,8 @@ nav ul li a{
   @media screen and (max-width:800px){
     .back-video{left: 10;
     }}
+
+nav{
+    width: 100%;
+    background-color: red;
+}
