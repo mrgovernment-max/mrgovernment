@@ -38,17 +38,7 @@ nav ul li{
     background-color:rgb(61, 57, 52);
 }
 
-nav ul li:first-child{
-    float: inline-start;
-    font-size: 7vh;
-    border: hidden;
-    left: 0;
-    background-color: transparent;
-    
-}
 
-@media screen and (max-width:800px){
-    nav ul li:first-child{font-size: inherit;}}
 
 nav ul{
     text-align: right;
