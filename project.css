@@ -161,7 +161,7 @@ nav ul li a:hover{
         color: #e6e1e1;
         font-weight: 10;
         font-size: large;
-        margin-left: 15%;
+        margin-left: 40%;
 
        
       }
@@ -173,20 +173,22 @@ nav ul li a:hover{
 
 
       .third{
-        margin-top: 5%;
+        margin-top: 10%;
         margin-bottom: 5%;
       }
 
     #icons{
         font-size: 30px;
-        position: absolute;
-        margin-left: 10%;
+      margin-left: 40%;
+      
+  
     }
 
     #icons a{
         text-align: center;
         color: orangered;
         margin-right: 30px;
+        
       
     }
 
