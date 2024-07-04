@@ -9,6 +9,11 @@ body{
   
 }
 
+.whole{
+    margin-bottom: -1000000vh;
+}
+
+
 nav{
     width: 100%;
     margin-top: 3%;
@@ -105,17 +110,28 @@ nav ul li a:hover{
         
       }
 
+      @media screen and (max-width:800px){
+        .main{width: 100%;
+            margin-left: 1%;
+            margin-right: 1%;
+        }}
+
       .first p{
         text-align: center;
        color: #ddd;
-        font-size:55px ;
-        font-weight: 800;
+        font-size:50px ;
+       
       }
+
+      
 
       .second p{
         margin: auto;
         text-align: center;
         color: #ddd;
+        font-size: 15px;
+        line-height: 25px;
+        word-spacing: 5px;
       }
       
       .third a{
