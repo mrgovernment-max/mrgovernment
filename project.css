@@ -59,6 +59,7 @@ nav ul li a:hover{
     border-radius: 20px;
     color: white;
     padding-bottom: 2px;
+    transition-duration: 1s;
    
 }
 
