@@ -4,7 +4,10 @@ body{
     background-image: url(6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+   
     font-family: "Montserrat",sans-serif;
+    margin: 0;
+    padding: 0;
   
 }
 
@@ -12,7 +15,7 @@ html,body{
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0;
+   
 }
 
 
@@ -115,7 +118,9 @@ nav ul li a:hover{
         margin-right: 10%;
         margin-top: 2%;
         
+        
       }
+
 
       @media screen and (max-width:800px){
         .main{width: 100%;
@@ -126,6 +131,7 @@ nav ul li a:hover{
 
       .first p{
         text-align: center;
+        font-family: sans-serif;
        color: #ddd;
         font-size:50px ;
        
@@ -162,4 +168,21 @@ nav ul li a:hover{
 
       .third{
         margin-top: 5%;
+        margin-bottom: 5%;
       }
+
+    #icons{
+        font-size: 30px;
+        position: absolute;
+        
+    }
+
+    #icons a{
+        text-align: center;
+        margin-right: 40px;
+        color: orangered;
+    }
+
+    #icons a:hover{
+        font-size:32px ;
+    }
