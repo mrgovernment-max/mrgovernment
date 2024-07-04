@@ -193,5 +193,6 @@ nav ul li a:hover{
     }
 
     #icons a:hover{
-        font-size:32px ;
+         font-size:35px ;
+        transition: 1s;
     }
