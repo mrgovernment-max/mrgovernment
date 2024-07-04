@@ -4,7 +4,6 @@ body{
     background-image: url(6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-y: hidden;
     font-family: "Montserrat",sans-serif;
   
 }
