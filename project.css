@@ -182,10 +182,18 @@ nav ul li a:hover{
       }
 
 
+
+
       .third{
-        margin-top: 10%;
+        margin-top: 20px;
         margin-bottom: 5%;
       }
+
+      
+      @media screen and (max-width:800px){
+        .third{margin-top: 10%;}}
+
+
 
     #icons{
         font-size: 30px;
