@@ -1,0 +1,193 @@
+
+body{
+    background-color:rgb(210, 228, 228);
+    background-repeat: no-repeat;
+}
+
+/*general contaning messi and ronaldo*/
+#try{
+    display: flex;
+    column-gap: 50px;
+}
+/*messi's image*/
+#mess{
+    display: none;
+}
+
+/*ronaldo's image*/
+#rod{
+    display: none;
+}
+
+/*wrong button*/
+#but{
+    display: none;
+    padding:20px;
+    margin-top: 10px;
+    background-color: red;
+    border-radius: 20px;
+}
+
+/*nova's portfolio button*/
+#butt{
+    padding:20px;
+    display: none;
+    margin-top: 10px;
+    background-color: green;
+    border-radius: 20px;
+}
+
+/*nova's portfolio button anchor*/
+
+#butt a{
+    text-decoration: none;
+    
+}
+
+
+/*general containig driving checks*/
+#checks{
+    border: 1px ;
+    padding: 2%;
+    margin-top: 20px;
+}
+
+
+/*second container for driving checks*/
+#check{
+    border: groove;
+    padding: 50px;
+    display: none;
+    margin: auto;
+    text-align: center;
+    width: 500px;
+    border-radius: 30px;
+    background-image: linear-gradient(black,rgba(45, 45, 111,0.6),white);
+    color: white;
+}
+
+/*button to trigger driving checks*/
+
+#done{
+    padding: 7px 2%;
+    margin-top: 10px;
+    background-color: rgba(83, 157, 83,0.4);
+    border-radius: 10px;
+
+}
+
+#done:hover{
+    background-color: rgba(122, 196, 196,0.8);
+}
+
+/*general container for game*/
+
+#rps{
+    border: 1px ;
+    padding: 2%;
+    margin-top: 50px;
+    display: none;
+    width: 100%;
+}
+
+
+@media screen and (max-width:800px){
+    #rps{margin-top: 95px;}}
+
+/*second container for the game*/
+
+#Rps{
+    padding: 10%;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    border-radius: 30px;
+    background-image: linear-gradient(black,rgba(45, 45, 111,0.6),white);
+    color: white;
+    box-shadow: 15px 25px 10px 5px rgba(11, 11, 11,0.2);
+    border: 10px solid white;
+    
+}
+
+/*buttons [rock paper siccors]*/
+
+#rock:hover{
+
+    background-color: black;
+    color: aliceblue;
+}
+#paper:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+#scissors:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+#rock,#paper,#scissors{
+    padding: 10px 5%;
+   
+}
+
+
+/*conatins the buttons*/
+.buts{
+    word-spacing: 20px;
+}
+
+#cont{
+    border: 1px ;
+    padding: 2%;
+    margin-top: 50px;
+    width: 100%;
+    
+}
+
+#const{
+    padding: 10%;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    border-radius: 30px;
+    background-image: linear-gradient(black,rgba(114, 85, 54, 0.6),white);
+    color: white;
+    box-shadow: 15px 25px 10px 5px rgba(11, 11, 11,0.2);
+    border: 10px solid;
+    
+}
+
+@media screen and (max-width:800px){
+    h2{font-size: 20px;}}
+
+#guess_numm{
+    font-size: 30px;
+}
+
+@media screen and (max-width:800px){
+    #guess_numm{font-size: 20px;}}
+
+#dark{
+    display: none;
+    padding:5px;
+    display: none;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin-right: 40px;
+    float: right;
+}
+
+#dark:hover{
+    transition: 0.5s;
+    transform: scale(1.3);
+}
+
+#darkk{
+    display: none;
+    
+}
+
+
