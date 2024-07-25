@@ -190,4 +190,21 @@ body{
     
 }
 
+/*ok button*/
+#my{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    width: 15%;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+
+#my:hover{
+    background-color: white;
+    color: black;
+    border-radius: 0px;
+    transition: 1s;
+}
+
 
