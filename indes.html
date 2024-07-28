@@ -39,7 +39,7 @@
 
 const UserName = prompt("Nova Wants To Know Your Name");
 
-if (UserName === "") {
+if (UserName === "" ||UserName == null ) {
    const errorMess = document.getElementById("container")
     errorMess.innerHTML = "CAN'T ACCESS NOVA'S WORK WITHOUT TELLING NAME";
 }
