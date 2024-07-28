@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--this is the head section-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="stylee.css">
+    <meta name="keywords" content="beat,trending,beatsverse,verse,songs,music,audio,mp3,mp4,download">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME-PAGE</title>
+</head>
+<body>
+
+    <div id="containers">
+
+        <div id="container">
+
+    <h1></h1>
+
+    
+   
+   
+   
+   <button onclick="depositMoney()">deposit</button>
+   <input type="number" id="money"><br>
+
+   
+   <button onclick="withdrawMoney()">withdraw</button>
+   <input type="number" id="moneyy"><br>
+   
+   <button onclick="checkMoney()">Checkbalance</button>
+</div>
+
+</div>
+
+<script>
+
+const UserName = prompt("Nova Wants To Know Your Name");
+
+if (UserName === "") {
+   const errorMess = document.getElementById("container")
+    errorMess.innerHTML = "CAN'T ACCESS NOVA'S WORK WITHOUT TELLING NAME";
+}
+
+
+class BankAccount {
+    constructor(accountNumber,accountHolder,balance=0){
+        this.accountNumber = accountNumber,
+        this.accountHolder = accountHolder,
+        this.balance = balance
+        
+    }
+
+
+    deposit(amount){
+        this.balance += amount;
+        alert(`An amount of $${amount} has been deposited succesfully .
+        Current balance: $${myAccount.balance}` );
+    }
+
+    withdraw(amount){
+        
+        this.balance-=amount
+
+
+       
+    }
+
+    checkBalance(amount){
+        console.log(`Current Balance : $${balance}`);
+    }
+    
+    
+}
+
+const myAccount = new BankAccount(0110111,"Emmanuel");
+
+
+function depositMoney(){
+
+    const amount = parseInt(document.getElementById("money").value)
+    if (amount > 0){
+        myAccount.deposit(amount)
+    }
+    else{console.log("invalid command")}
+}
+
+function withdrawMoney() {
+    const amount = Number(document.getElementById("moneyy").value);
+
+    if (isNaN(amount) || amount < 0) {
+        alert("Please enter a valid amount.");
+        return;
+    }
+
+    if (myAccount.balance >= amount) {
+        myAccount.withdraw(amount);
+        alert("An amount of $" + amount + " has been withdrawn. Current balance: $" + myAccount.balance);
+    } else {
+        alert("Insufficient Balance");
+    }
+}
+
+function checkMoney(){
+    alert(`Current Balance : $${myAccount.balance}`)
+}
+
+const accountHolder = document.getElementsByTagName("h1")[0]
+accountHolder.innerHTML = "Heloo " + UserName+"!";
+
+
+</script>
+    
+</body>
+</html>
