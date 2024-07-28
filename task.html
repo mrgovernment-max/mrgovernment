@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="task.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+</head>
+<body>
+    <div id="tasks">
+        <div id="task">
+            <h2 style="border-bottom: 5px solid aqua;display: inline-block;
+             padding-bottom: 10px;border-bottom-left-radius: 7px;
+              border-bottom-right-radius: 7px;"></h2><br>
+            <label for="1task">Add Your Custom Task</label><br>
+            <input type="text" id="1task"><br>
+            <button onclick="addFunction()" id="task2">Add</button>
+        </div>
+
+        <div id="taskk">
+            <h2 style="border-bottom: 5px solid aqua;display: inline-block;
+            padding-bottom: 10px;border-bottom-left-radius: 7px;
+             border-bottom-right-radius: 7px;"></h2><br>
+        </div>
+    </div>
+
+
+    <script>
+     const UserName = prompt("Nova Want's To Know Your Name; ").toUpperCase()
+
+     if(UserName=="" ||UserName == null ){
+        let wrong = document.getElementById("task")
+        let wrongg = document.getElementById("taskk")
+        let displayName = document.getElementsByTagName("h1")[0]
+
+        wrong.innerHTML = "CANNOT ACCESS NOVA'S WORK WITHOUT TELLING NAME"
+        wrongg.innerHTML = "CANNOT ACCESS NOVA'S WORK WITHOUT TELLING NAME"
+        displayName.innerHTML = `${UserName}'s TASKS`
+     }
+     else {
+    let displayName = document.getElementsByTagName("h2")[0];
+    displayName.innerHTML = `${UserName}'s To-Do TASKS`;
+
+    let displayNamee = document.getElementsByTagName("h2")[1];
+    displayNamee.innerHTML = `${UserName}'s Completed Tasks`;
+}
+
+
+
+      function addFunction() {
+    const userTask = document.getElementById("1task").value;
+    const display = document.getElementById("task");
+    const tasker = document.getElementById("taskk");
+
+    if (userTask === "") {
+        alert("Enter A Task");
+    } else {
+        // Create a new list item element
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `<input type="checkbox"> ${userTask}`;
+
+        // Append the new list item to the display element
+        display.appendChild(listItem);
+
+        // Add event listener to the new checkbox
+        const checkbox = listItem.querySelector('input[type="checkbox"]');
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                // Move the task to the completed tasks section
+                const completedTask = document.createElement("li");
+                completedTask.innerHTML = `<input type="checkbox" checked disabled> ${userTask}`;
+                tasker.appendChild(completedTask);
+
+                // Remove the task from the original list
+                display.removeChild(listItem);
+            } else {
+                console.log("Checkbox is unchecked.");
+            }
+        });
+
+        // Clear the input field
+        document.getElementById("1task").value = "";
+    }
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+body{
+    background-color: rgba(31, 33, 15,0.4);
+    display: inline;
+}
+/*main container in the body*/
+#tasks{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*first child container*/
+#task{
+    text-align: center;
+    background-color: rgba(91, 161, 73, 0.3);
+    width: 50%;
+    margin: auto;
+    line-height: 25px;
+    margin-top: 5%;
+    padding: 20px;
+    border: 7px solid rgba(188, 182, 148,0.9);
+    border-radius: 20px;
+}
+
+@media screen and (max-width:800px){
+    #task{width: 80%;}}
+
+    /*second child container*/
+#taskk{
+    text-align: center;
+    background-color: rgba(91, 161, 73, 0.3);
+    width: 50%;
+    margin: auto;
+    line-height: 25px;
+    margin-top: 5%;
+    padding: 20px;
+    border: 7px solid rgba(188, 182, 148,0.9);
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width:800px){
+    #taskk{width: 80%;}}
+
+
+
+
+
+/*button to add user custom task*/
+
+
+#task2{
+    margin-top: 10px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    width: 90px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+
+#task2:hover{
+    background-color: rgba(255, 249, 249,0.6);
+    color: black;
+    border-radius: 0px;
+    transition: 1s;
+}
+
+/*list element created in javaScript*/
+
+li{
+    margin-top: 5px;
+    list-style-type: none;
+    text-align: left;
+
+}
+
+input{
+    width: 200px;
+}
+
+li input[type="checkbox"] {
+    margin-right: -80px; /* Adjust this value to control the spacing */
+    text-align: center;
+}
+
+li span {
+    flex-grow: 1; /* This will make the text take up the remaining space */
+}
