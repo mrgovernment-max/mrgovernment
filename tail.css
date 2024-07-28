@@ -109,6 +109,9 @@ body{
     
 }
 
+@media screen and (max-width:800px){
+    #Rps{width: 80%;}}
+
 /*buttons [rock paper siccors]*/
 
 #rock:hover{
@@ -145,6 +148,7 @@ body{
     
 }
 
+
 #const{
     padding: 10%;
     margin: auto;
@@ -157,6 +161,9 @@ body{
     border: 10px solid;
     
 }
+
+@media screen and (max-width:800px){
+    #const{width: 80%;}}
 
 @media screen and (max-width:800px){
     h2{font-size: 20px;}}
@@ -192,12 +199,13 @@ body{
 
 /*ok button*/
 #my{
-    padding-top: 5px;
-    padding-bottom: 10px;
-    width: 15%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 90px;
     border-radius: 20px;
     background-color: black;
     color: white;
+    font-size: 19px;
 }
 
 #my:hover{
