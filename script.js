@@ -8,82 +8,10 @@
 
 
 
-function play() {
-    let guess = document.getElementById("guess_num").value.toUpperCase();
-
-
-    if (guess === "") {
-        // No input provided
-        let wrong = document.getElementById("but");
-        wrong.style.display = "inline";
-    } 
-    
-    else {
-        // Input provided
-        let win = document.getElementById("butt");
-        win.style.display = "inline";
-
-        let last = document.getElementById("cont")
-        last.style.display = "none";
-
-        let wrong = document.getElementById("but");
-        wrong.style.display = "none"
-
-        let looss = document.getElementById("guess_num");
-        looss.style.display = "none";
-
-        let loosr = document.getElementById("my");
-        loosr.style.display = "none";
-
-        let vaa = document.getElementById("try");
-        vaa.style.display = "none";
-
-        let darkTheme = document.getElementById("dark")
-        darkTheme.style.display = "inline";
-
-        document.body.style.backgroundColor = "black";
-
-
-        let loosss = document.getElementById("guess_numm");
-        loosss.innerHTML = "";
-
-        /* let nova = document.getElementById("check")
-        nova.style.display = "block"; */
-
-        let novaa = document.getElementById("rps");
-        novaa.style.display = "block";
-
-        console.log("Congratulations! You guessed correctly!");
-
-        alert("Hello " + guess + ", This Is Nova's First Ever JavaScript work. Try It Out!");
-    }
-}
 
 
 
-//Eligibility To Drive
-/*
-let agee;
-let driver;
-let wow;
 
-
-function bring() {
-    let agee = parseInt(document.getElementById("ageInput").value);
-    let driverr = document.getElementById("driverSelect").value.toLowerCase();
-
-    let wow = document.getElementById("make");
-
-
-    if (agee >= 18 && driverr === "yes") {
-        
-        wow.textContent = "Great! You Are Eligible To Drive";
-    }
-
-    else{
-        wow.textContent="Oops You Are Not Eligible To Drive"
-    }
-}*/
 
 //Rock Paper scissors Game
 
@@ -349,6 +277,9 @@ function playGa() {
             borderTheme.style.borderColor = "white"
         }
     }
-    
+
+
+
+
 
 

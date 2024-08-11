@@ -4,34 +4,11 @@ body{
     background-repeat: no-repeat;
 }
 
-/*general contaning messi and ronaldo*/
-#try{
-    display: flex;
-    column-gap: 50px;
-}
-/*messi's image*/
-#mess{
-    display: none;
-}
 
-/*ronaldo's image*/
-#rod{
-    display: none;
-}
-
-/*wrong button*/
-#but{
-    display: none;
-    padding:20px;
-    margin-top: 10px;
-    background-color: red;
-    border-radius: 20px;
-}
 
 /*nova's portfolio button*/
 #butt{
     padding:20px;
-    display: none;
     margin-top: 10px;
     background-color: green;
     border-radius: 20px;
@@ -44,49 +21,12 @@ body{
     
 }
 
-
-/*general containig driving checks*/
-#checks{
-    border: 1px ;
-    padding: 2%;
-    margin-top: 20px;
-}
-
-
-/*second container for driving checks*/
-#check{
-    border: groove;
-    padding: 50px;
-    display: none;
-    margin: auto;
-    text-align: center;
-    width: 500px;
-    border-radius: 30px;
-    background-image: linear-gradient(black,rgba(45, 45, 111,0.6),white);
-    color: white;
-}
-
-/*button to trigger driving checks*/
-
-#done{
-    padding: 7px 2%;
-    margin-top: 10px;
-    background-color: rgba(83, 157, 83,0.4);
-    border-radius: 10px;
-
-}
-
-#done:hover{
-    background-color: rgba(122, 196, 196,0.8);
-}
-
 /*general container for game*/
 
 #rps{
     border: 1px ;
     padding: 2%;
     margin-top: 50px;
-    display: none;
     width: 100%;
 }
 
@@ -176,9 +116,7 @@ body{
     #guess_numm{font-size: 20px;}}
 
 #dark{
-    display: none;
     padding:5px;
-    display: none;
     margin-top: 20px;
     background-color: white;
     color: black;
@@ -197,22 +135,13 @@ body{
     
 }
 
-/*ok button*/
-#my{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 90px;
-    border-radius: 20px;
-    background-color: black;
-    color: white;
-    font-size: 19px;
+
+
+
+h2{
+    margin-top: -5px;
+    font-size: 30px;
 }
 
-#my:hover{
-    background-color: white;
-    color: black;
-    border-radius: 0px;
-    transition: 1s;
-}
 
 
