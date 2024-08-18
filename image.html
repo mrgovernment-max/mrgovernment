@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .main-container{
+            width: 100%;
+            justify-items: center;
+        }
+
+        .sub-container{ 
+            width: 60%;
+            margin: auto;
+            margin-top: 7%;
+        }
+
+        input{
+            width: 50%;
+        }
+
+        input::placeholder{
+            text-align: center;
+        }
+
+        img{
+            width: 222px;
+            height: 330px;
+        }
+
+        #gallery{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<body>
+
+    <div class="main-container">
+
+        <div class="sub-container">
+        <input  id="imginput" type="text" placeholder="enter image url">  
+        <button onclick="displayImage()">add</button>
+
+        <div id="gallery">   </div>
+
+
+
+
+    </div>
+</div>
+
+
+    <script>
+ function displayImage() {
+    const imgInput = document.getElementById("imginput").value;
+
+    if(imgInput){
+  
+    const newImage = document.createElement("img");
+    newImage.src = imgInput;
+
+    // Assuming you have an existing container element with the ID "gallery"
+    const galleryContainer = document.getElementById("gallery");
+    galleryContainer.appendChild(newImage);
+    document.getElementById("imginput").value = ''
+
+}
+
+   
+
+    else{
+        alert("enter image src")
+    }
+}
+
+
+
+
+    </script>
+
+
+</body>
+</html>
