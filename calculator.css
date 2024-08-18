@@ -1,0 +1,53 @@
+#calcs{
+    width: 100%;
+    margin-top: 8%;
+    
+}
+
+
+
+
+#calc{
+    display: grid;
+    width: 50%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+@media screen and (max-width:800px){
+    #calc{ width: 95%;
+        margin-top: 10%;
+        
+        
+    }}
+
+
+#input-results {
+    grid-row-start: 1; /* Starts on the first row line */
+    /* Other styling properties for the first element */
+    grid-column: 1 / span 4;
+    height: 40px;
+    width: 70%;
+   
+
+}
+
+#calcc{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    margin-top: 8%;    
+}
+
+#input1{
+  
+   padding: 10px;
+  
+
+}
+#input2{
+  
+    padding: 10px;
+   
+}
+
