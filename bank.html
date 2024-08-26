@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding, viewport, and compatibility -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Keywords for SEO -->
+    <meta name="keywords" content="beat,trending,beatsverse,verse,songs,music,audio,mp3,mp4,download">
+    
+    <!-- External CSS and fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- Link to custom CSS -->
+    <link rel="stylesheet" href="stylee.css">
+    
+    <title>HOME-PAGE</title>
+    
+    <!-- Internal CSS for basic responsiveness -->
+    <style>
+        /* Basic reset and body styling */
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Main container styling */
+        #container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Input and button styling */
+        input, button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        /* Button specific styling */
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* Link styling */
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive styling for smaller screens */
+        @media (max-width: 500px) {
+            #container {
+                padding: 15px;
+            }
+
+            input, button {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main container to hold the content -->
+    <div id="container">
+        <!-- Placeholder for dynamic username -->
+        <h1></h1>
+
+        <!-- Input field for monetary amount -->
+        <input type="number" id="money" placeholder="Enter amount">
+        
+        <!-- Buttons for deposit, withdraw, and checking balance -->
+        <button onclick="depositMoney()">Deposit</button>
+        <button onclick="withdrawMoney()">Withdraw</button>
+        <button onclick="checkMoney()">Check Balance</button>
+
+        <!-- Link to another page/portfolio -->
+        <a href="task.html">CHECKOUT OTHER PORTFOLIO</a>
+    </div>
+
+    <!-- JavaScript for interactive functionality -->
+    <script>
+        // Prompt the user for their name
+        const UserName = prompt("Nova Wants To Know Your Name");
+
+        // Display an error message if the user does not provide a name
+        if (UserName === "" || UserName == null) {
+            const errorMess = document.getElementById("container");
+            errorMess.innerHTML = "CANNOT ACCESS NOVA'S WORK WITHOUT TELLING NAME";
+        }
+
+        // BankAccount class to handle account operations
+        class BankAccount {
+            constructor(accountNumber, accountHolder, balance = 0) {
+                this.accountNumber = accountNumber;
+                this.accountHolder = accountHolder;
+                this.balance = balance;
+            }
+
+            // Method to deposit money
+            deposit(amount) {
+                this.balance += amount;
+                alert(`An amount of $${amount} has been deposited successfully.\nCurrent balance: $${this.balance}`);
+            }
+
+            // Method to withdraw money
+            withdraw(amount) {
+                this.balance -= amount;
+            }
+
+            // Method to check balance
+            checkBalance() {
+                console.log(`Current Balance: $${this.balance}`);
+            }
+
+            // Method to send money (for future functionality)
+            sendMoney(amount) {
+                this.balance -= amount;
+                alert(`An amount of $${amount} has been sent successfully.\nCurrent balance: $${this.balance}`);
+
+                const receiver = parseInt(document.getElementById("receiver").value);
+                const receiverAccount = new BankAccount(`${receiver}`);
+                receiverAccount.balance += amount;
+            }
+        }
+
+        // Create a new account instance
+        const myAccount = new BankAccount(110111);
+
+        // Function to handle deposit
+        function depositMoney() {
+            const amount = parseInt(document.getElementById("money").value);
+            if (amount > 0) {
+                myAccount.deposit(amount);
+            } else {
+                console.log("Invalid command");
+            }
+            document.getElementById("money").value = '';
+        }
+
+        // Function to handle withdrawal
+        function withdrawMoney() {
+            const amount = Number(document.getElementById("money").value);
+
+            if (isNaN(amount) || amount <= 0) {
+                alert("Please enter a valid amount.");
+                return;
+            }
+
+            if (myAccount.balance >= amount) {
+                myAccount.withdraw(amount);
+                alert(`An amount of $${amount} has been withdrawn.\nCurrent balance: $${myAccount.balance}`);
+            } else {
+                alert("Insufficient Balance");
+            }
+
+            document.getElementById("money").value = '';
+        }
+
+        // Function to check balance
+        function checkMoney() {
+            alert(`Current Balance: $${myAccount.balance}`);
+        }
+
+        // Display a welcome message with the user's name
+        const accountHolder = document.getElementsByTagName("h1")[0];
+        accountHolder.innerHTML = `Hello, ${UserName}!`;
+    </script>
+</body>
+</html>
