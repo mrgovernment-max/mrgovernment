@@ -1,348 +1,258 @@
-
-#whole{
-        background-image: url(hero-image.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        padding: 0;
-        margin: 0px 0px ;
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f0f0f0, #f5f5f5);
+    color: #333;
 }
 
-nav{
-    width: 100%;
-    margin-top: -0.9%;
-    width: 100%;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-family:  "Montserrat",sans-serif;
-    
-}
-
-nav a:hover{
-    border-bottom: 2px solid white;
-    padding: 3px;
-     color:#404040;
- }
-
-
-nav ul li{
-    border: 1px solid;
-    display: inline;
-    font-size: small;
-    padding: 5px 0.5%;
-    margin-left: 2px;
-    border-style: groove;
-    background-color:rgb(61, 57, 52);
-}
-
-
-
-
-
-nav ul{
-    text-align: right;
-   
-    
-}
-@media screen and (max-width:800px){
-    nav ul li{text-align: center;}}
-
-
-#nova{
-    margin-left: -30px;
-    text-align: start;
-    font-size: x-large;
-    color: white;
-    font-family:  "Montserrat",sans-serif;
-
-}
-
-#write{
-    width: 100%;
-    height: 100%;
-    margin-bottom: 0;
-    padding-bottom: 40vh;
-    color: white;
-    margin-left:3%;
-    margin-top: 20%;
-    font-family:  "Montserrat",sans-serif;
-    position: relative;
-
-}
-
-    @media screen and (max-width:1100px){
-        #write{margin-top: 80%;}}
-        @media screen and (max-width:1100px){
-            #write{padding-bottom: 40vh;}}
-           
-            
-        
-    
-
-
-#tat{
-   font-size: small;
-    width: 15%;
-    padding: 10px;
+header, footer {
+    background-color: #111;
+    color: #fff;
     text-align: center;
-    background-color: white;
-    color: black;
-    border-radius: 30px;
-
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-#tat a{
+
+nav {
+    margin-top: 1em;
+}
+
+nav a
+ {
+    color: #fff;
+    margin: 0 1em;
     text-decoration: none;
-    color: black;
-    font-family:  "Montserrat",sans-serif;
-    
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-
-@media screen and (max-width:800px){
-   #tat{width: 35%;}
+nav a:hover {
+    color: #ff6f61;
 }
 
-#tot{
-    font-size: 300%;
-    width: 100%;
-}
-@media screen and (max-width:800px){
-    #tot{font-size: 250%;}}
-
-#tet{
-    width: 100%;
-    line-height: 20px;
-    word-spacing: 2px;
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
 }
 
-
-
-#imgs{
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-image: url('./images/shoe.webp');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-basis: 10%;
-    gap: 2%;
-    width: 100%;
     justify-content: center;
     align-items: center;
 }
 
-#imgs img{
-    width: 400px;
-    height: 200px;
-   
-}
-
-
-/*@media screen and (max-width:1100px){
-    #imgs{grid-template-columns: 1fr ;}
- }*/
- 
-#wtt{
-    color: white;
-    margin-top: 15%;
-    margin-left: 5%;
-}
-
-#wtt p{
-    font-size: 10vh;
-}
-@media screen and (max-width:800px){
-    #wtt p{font-size: 6.5vh;}}
-
-#wttt{
-    margin-left: 50%;
-    margin-top: -30%;
-    color: white;
-    word-spacing: 1px;
-    line-height: 22px; 
-    
-}
-
-#wttt a{
-    border: 1px solid white;
-    padding: 2%;
-    margin-top: 10px;
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    border-radius: 30px;
-    font-family:  "Montserrat",sans-serif;
-}
-
-#wttt a:hover{
-    background-color: black;
-    color: white;
-}
-
-@media screen and (max-width:800px){
-    #wttt{ margin-top: 15%;
-    margin-left: 5%;}
- }
- @media screen and (max-width:800px){
-    #wttt p{font-size: x-large;}}
-
-    @media screen and (max-width:800px){
-        #wttt p{line-height: 30px;}}
-
- #con{
-    line-height: 25px;
-    width: 100%;
-    margin: auto;
-    margin-top: 12%;
-    color: white;
-    font-family:  "Montserrat",sans-serif;
-    background-color: rgb(32, 32, 43);
-    padding: 20px 5%;
-    border-radius: 15px;
-    position: relative;
- }
-
- @media screen and (max-width:800px){
-    #con{margin-bottom: 60%;}}
-    @media screen and (max-width:800px){
-        #con{padding: 7%;}}
-
-
-
- #con button{
-    padding: 7px 5%;
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: 0;
-
- }
-
- #con button a{
-    color: black;
-    text-decoration: none;
-    font-family:  "Montserrat",sans-serif;
-    font-size: larger;
- }
-
-
-
- #cons{
-    background-color: transparent;
-    margin: auto;
-    margin-top: 15%;
-    width: 50%;    
-    
- }
-
- @media screen and (max-width:600px){
-    #cons{margin-top: 70%;}}
-    @media screen and (max-width:600px){
-        #cons{margin-left: 5%;}}
-        @media screen and (max-width:600px){
-            #cons{margin-right: 10%;}}
-    @media screen and (max-width:600px){
-        #cons{width:80%;}}
-        @media screen and (max-width:600px){
-            #cons input{padding: 1%;}}
-
- #icons{
-    float: right;
-    font-size: xx-large;
-    color: aliceblue;
-    margin-top: 10px;
-   
- }
- @media screen and (max-width:800px){
-    #icons{margin-bottom: 90%;}}
-    @media screen and (max-width:800px){
-        #icons{margin-top: -55%;}}
-
- #icons a{
-
-    color: aliceblue;
-
- }
-
- #all{
-    float: right;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 5%;
-    margin-right: 5%;
-    column-gap: 5%;
-    row-gap: 5%;
-    width: 50%;
-    margin-top: 10%;
-    border-bottom: 2px solid white;
-    
-
- }
-
- @media screen and (max-width:1100px){
-    #all{margin-top: 25%;}}
-    @media screen and (max-width:1100px){
-        #all{float: left;}}
-        @media screen and (max-width:1100px){
-            #all{width: 100%;}}
-            @media screen and (max-width:1100px){
-                #all{padding-bottom: 10%;}}
-
- #mee{
-    font-size: 300%;
-    margin-top: 10%;
+.hero::before {
+    content: '';
     position: absolute;
-    color: white;
-    background-color: transparent;
-    width: 25%;
-    height: 10%;
- }
- @media screen and (max-width:1100px){
-    #mee{width: 100%;}}
-
-
-
-  #me{
-    background-color: transparent;
-    color: white;
-    margin-left: 35%;
-    margin-right: 5%;
-    margin-top: 5%;
-    padding: 2%;
-    font-family:  "Montserrat",sans-serif;
-    
-  } 
-  @media screen and (max-width:1100px){
-    #me{margin-left: 2px;}}
-    @media screen and (max-width:1100px){
-        #me{margin-top: 40%;}}
-
-  
-  #ma{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 5%;
-    column-gap: 5%;
-    padding-bottom: 10%;
-    border-bottom: 3px solid white;
-    
-  }
-  #bac{
-    float: right;
-    background-color: white;
-    margin-top: 5%;
-    padding: 10px 4%;
-    text-decoration: none;
-    color: black;
-    font-family:  "Montserrat",sans-serif;
-    border-radius: 30px;
-
-  }
-
-  #ma,#maa,#mo,#moo,#mat{
+    top: 0;
+    left: 0;
     width: 100%;
-    color: white;
-    font-family:  "Montserrat",sans-serif;
-  }
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+
+.hero-text h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.hero .btn {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #ddd5d4;
+    color: #111;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 2em 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-text h2 {
+        font-size: 2.5em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5em 0;
+    }
+}
+
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em;
+}.product-item {
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+    margin: 15px; 
+    text-align: center; 
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+    max-width: 250px; 
+    width: 100%; 
+}
+
+.product-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-5px); 
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.product-item h3 {
+    font-size: 1.25em; 
+    margin: 10px 0;
+    color: #333; 
+}
+
+.product-item p {
+    font-size: 1em; 
+    color: #666; 
+}
+
+.product-item button {
+    background-color: #007BFF;
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.product-item button:hover {
+    background-color: #0056b3; 
+}
+
+
+
+
+.add-to-cart-btn {
+    background-color: #0000009c;
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.add-to-cart-btn:hover {
+    background-color: #218838; 
+    transform: translateY(-2px); 
+}
+
+.add-to-cart-btn:active {
+    background-color: #1e7e34; 
+    transform: translateY(0); 
+}
+
+.add-to-cart-btn:focus {
+    outline: none; 
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+
+.cart-item {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 15px; 
+    margin: 10px 0; 
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.cart-item p {
+    margin: 0; 
+    font-weight: 600; 
+    color: #333; 
+}
+
+.remove-icon {
+    transition: transform 0.3s ease; 
+}
+
+.remove-icon:hover {
+    transform: scale(1.1);
+}
+
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 1em;
+    border-radius: 5px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-total {
+    margin-top: 2em;
+    font-size: 1.2em;
+}
 
 
